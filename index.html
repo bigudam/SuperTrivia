@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Super trivia</title>
+    <link rel="stylesheet" href="stile.css">
+    <script type="text/javascript" src="app.js"></script>
+</head>
+  <body>
+    <header>
+      <h1>
+        Super Trivia
+      </h1>
+      
+    <div id="nombre">
+          <p>Ingresa tu nombre de usuario</p>
+        <input class="nameinput" type="text" name="userName">
+          <a><br>
+            <button id="botonEmpezar" class="button" onclick="clickbotonEmpezar()">Empezar</button>
+            </a>
+        </div>
+    </header>
+    <div id ="eleccionTrivia" class="ocultar" style="text-align:center;">
+            ¿De qué lado estás?<br>
+            Escoge tu bando<br>
+            <div class="dom">
+              <button id="botonDC" onclick="clickbotonDC()"><img class="dc" src="dc.png"></button> <br>
+              <button id="botonMarvel" onclick="clickbotonMarvel()"><img class="dc" src="marvel.png"></button>
+            </div>
+          </div>
+
+
+    <div id="DC" class="ocultar">
+     <p class="Q">1.-¿Dentro de qué años se creo DC Comics?</p>
+            <input type="radio" id="pregunta1DC" name="respuestaDC1a" value=0>1938-1956<br>
+            <input type="radio" id="pregunta1DC" name="respuestaDC1b" value=0>1934-1937<br>
+            <input type="radio" id="pregunta1DC" name="respuestaDC1c" value=1>1935-1938<br>
+     <p class="Q">2.-¿Quién fue el fundador de DC Comics?</p>
+            <input type="radio" id="pregunta2DC" name="respuestaDC2a" value=0>Jim Lee<br>
+            <input type="radio" id="pregunta2DC" name="respuestaDC2b" value=1>Malcolm Wheeler-Nicholson<br>
+            <input type="radio" id="pregunta2DC" name="respuestaDC3c" value=0>Geoff Johns<br>
+     <p class="Q">3.-¿En qué año empezaron las publicaciones de superhéroes?</p>
+            <input type="radio" id="pregunta3DC" name="respuestaDC3a" value=0>1935<br>
+            <input type="radio" id="pregunta3DC" name="respuestaDC3b" value=1>1938<br>
+            <input type="radio" id="pregunta3DC" name="respuestaDC3c" value=0>1939<br>
+            <button id="botonCheckRespuestasDC" onclick="clickbotonCheckRespuestasDC()"> Revisar Respuestas </button> <br>
+      </div>
+    <div id="Marvel" class="ocultar">
+      <p class="Q">1.-¿Con qué película empezó el universo cinematográfico de estudio Marvel?</p>
+             <input type="radio" id="pregunta1Marvel" name="respuestaMarvel1a" value=0>Thor<br>
+             <input type="radio" id="pregunta1Marvel" name="respuestaMarvel1b" value=0>El regreso del increible Hulk<br>
+             <input type="radio" id="pregunta1Marvel" name="respuestaMarvel1c" value=1>Iron man<br>
+      <p class="Q">2.-¿Cuál ha sido la ultima película que sacado el estudio marvel?</p>
+             <input type="radio" id="pregunta2Marvel" name="respuestaMarvel2a" value=0>Avengers: Endgame<br>
+             <input type="radio" id="pregunta2Marvel" name="respuestaMarvel2b" value=0>Spider man:Lejos de casa<br>
+             <input type="radio" id="pregunta2Marvel" name="respuestaMarvel2c" value=1>Capitana marvel<br>
+      <p class="Q">3.-¿Qué papel tiene Stan Lee en su cameo del Capitán América: El primer vengador</p>
+             <input type="radio" id="pregunta3Marvel" name="respuestaMarvel3a" value=0>Conserje<br>
+             <input type="radio" id="pregunta3Marvel" name="respuestaMarvel3b" value=0>Policia<br>
+             <input type="radio" id="pregunta3Marvel" name="respuestaMarvel3c" value=1>Oficial del museo<br>
+            <button id="botonCheckRespuestasMarvel" onclick="clickbotonCheckRespuestasMarvel()"> Revisar Respuestas </button> <br>
+            </div>
+    <div id= "respuestas" class="ocultar">
+      Tus respuestas son
+    <button id="reset" class="button" onclick="Reset()">Volver a empezar</button>
+    </div>
+  </body>
+</html>
